@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sujeet Kumar — Software Engineer and M.Tech CSE student at IIT Ropar." />
+<title>Sujeet Kumar — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ─── NAV ─── -->
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">SK.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-outline" style="padding:8px 16px;font-size:13px;">⬇ Resume</a>
+      <button class="theme-btn" id="themeToggle" title="Toggle theme">🌙</button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#achievements" onclick="closeMobile()">Achievements</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge fade-up">
+        <span class="badge">🎓 M.Tech CSE @ IIT Ropar &nbsp;|&nbsp; GATE 2025 Qualifier (AIR 6962)</span>
+      </div>
+      <h1 class="hero-headline fade-up">Hi, I'm <span class="grad-text">Sujeet Kumar</span> 👋</h1>
+      <p class="hero-sub fade-up">Software Engineer specializing in scalable full-stack web applications, REST APIs, and microservice architectures.</p>
+      <div class="hero-ctas fade-up">
+        <a href="#projects" class="btn btn-primary">🚀 Explore Projects</a>
+        <a href="#" class="btn btn-outline">⬇ Download Resume</a>
+      </div>
+      <div class="hero-socials fade-up">
+        <a href="https://github.com/sujeet-kumar" target="_blank" class="social-link" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/sujeet-kumar" target="_blank" class="social-link" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="mailto:ksujeet7091@gmail.com" class="social-link" title="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-stat-row">
+        <div>
+          <div class="hero-stat-num">3+</div>
+          <div class="hero-stat-label">Projects Built</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label">Internships</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">8.15</div>
+          <div class="hero-stat-label">CGPA (B.Tech)</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">AIR 6962</div>
+          <div class="hero-stat-label">GATE 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">01. About Me</div>
+      <h2 class="section-title">A Bit About <span class="grad-text">Myself</span></h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <div class="about-bio fade-up">
+          <p>I'm a passionate software engineer and current <strong>M.Tech CSE student at IIT Ropar</strong>, building on a strong CS foundation from B.C.E Patna where I graduated with a CGPA of 8.15.</p>
+          <p>I thrive at the intersection of <strong>clean architecture and great user experience</strong> — engineering full-stack web applications, REST APIs, and data-driven dashboards that scale.</p>
+          <p>Whether it's a real-time co-watching platform using WebRTC, an IT helpdesk with RBAC, or a Shopify storefront — I bring deep technical curiosity and pragmatic problem-solving to every build.</p>
+          <p>Outside of code, I contribute to tech communities through <strong>GDSC</strong> and <strong>GDG Patna</strong>, and I'm continuously sharpening my skills in DSA, system design, and cloud architecture.</p>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div style="font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px;">🎓 Education</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">🎓</div>
+            <div class="timeline-body">
+              <div class="timeline-title">M.Tech — Computer Science & Engineering</div>
+              <div class="timeline-inst">IIT Ropar</div>
+              <div class="timeline-meta">2026 – 2028 (Ongoing)</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🏛</div>
+            <div class="timeline-body">
+              <div class="timeline-title">B.Tech — Computer Science & Engineering</div>
+              <div class="timeline-inst">B.C.E Patna</div>
+              <div class="timeline-meta">CGPA: 8.15/10 &nbsp;·&nbsp; 2022 – 2026</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">📚</div>
+            <div class="timeline-body">
+              <div class="timeline-title">Senior Secondary (12th)</div>
+              <div class="timeline-inst">CBSE Board</div>
+              <div class="timeline-meta">73.6% &nbsp;·&nbsp; 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">📖</div>
+            <div class="timeline-body">
+              <div class="timeline-title">Secondary (10th)</div>
+              <div class="timeline-inst">CBSE Board</div>
+              <div class="timeline-meta">73.0% &nbsp;·&nbsp; 2018</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">02. Experience</div>
+      <h2 class="section-title">Work <span class="grad-text">Experience</span></h2>
+      <p class="section-sub">Internships that shaped my engineering perspective and shipped real products.</p>
+    </div>
+    <div class="exp-tabs">
+      <button class="exp-tab active" onclick="switchTab(0)">FLATX — Frontend Intern</button>
+      <button class="exp-tab" onclick="switchTab(1)">Polytropic — SDE Intern</button>
+    </div>
+    <div class="exp-panel active" id="tab0">
+      <div class="exp-card fade-up">
+        <div class="exp-role">Frontend Development & Software Management Intern</div>
+        <div class="exp-company">FLATX — Startup Hub IT Patna</div>
+        <div class="exp-period">Dec 2025 – Jan 2026 · 2 months</div>
+        <ul class="exp-bullets">
+          <li>Engineered responsive UI components using <strong style="color:var(--text)">Next.js 15 & Tailwind CSS</strong>, improving cross-device rendering consistency for state-funded platform modules.</li>
+          <li>Managed deployment release pipelines, coordinating staging-to-production rollouts and minimizing downtime for live government-integrated services.</li>
+          <li>Collaborated with product and backend teams to translate Figma designs into pixel-perfect, accessible, and performant React components.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-panel" id="tab1">
+      <div class="exp-card fade-up">
+        <div class="exp-role">Software Development Intern</div>
+        <div class="exp-company">Polytropic Services Pvt. Ltd.</div>
+        <div class="exp-period">May 2025 – Jun 2025 · 2 months</div>
+        <ul class="exp-bullets">
+          <li>Developed a full-featured <strong style="color:var(--text)">Student Course Tracker Dashboard</strong> using Java, HTML/CSS, and MySQL with dynamic data visualization.</li>
+          <li>Built RESTful API endpoints with robust input validation and error handling, improving backend reliability and API response times.</li>
+          <li>Authored optimized dynamic SQL queries for complex reporting use cases, reducing query execution time by 40%.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">03. Projects</div>
+      <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+      <p class="section-sub">Things I've engineered — from real-time platforms to production e-commerce stores.</p>
+    </div>
+    <div class="proj-filters">
+      <button class="proj-filter active" onclick="filterProj('all', this)">All</button>
+      <button class="proj-filter" onclick="filterProj('fullstack', this)">Full Stack</button>
+      <button class="proj-filter" onclick="filterProj('realtime', this)">Real-Time</button>
+      <button class="proj-filter" onclick="filterProj('ecommerce', this)">E-Commerce</button>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card fade-up" data-cat="fullstack">
+        <div class="proj-icon">🎫</div>
+        <div class="proj-name">IT Helpdesk & Ticket Management System</div>
+        <div class="proj-desc">End-to-end SLA tracking workflow with JWT-based Role-Based Access Control (RBAC), automated email notifications, and resolution metrics dashboard.</div>
+        <div class="proj-tags">
+          <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">React</span>
+          <span class="tag">MongoDB</span><span class="tag">JWT</span><span class="tag">REST APIs</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/sujeet-kumar" target="_blank" class="proj-link">⌥ GitHub Code</a>
+          <a href="#" class="proj-link primary">↗ Live Demo</a>
+        </div>
+      </div>
+      <div class="proj-card fade-up" data-cat="realtime">
+        <div class="proj-icon">🎬</div>
+        <div class="proj-name">CinemaSync — Real-Time Co-Watching Platform</div>
+        <div class="proj-desc">Synchronized multi-user video playback with WebRTC peer audio mesh topology and low-latency WebSocket signaling. PWA-ready for mobile use.</div>
+        <div class="proj-tags">
+          <span class="tag">Next.js 15</span><span class="tag">Socket.io</span><span class="tag">WebRTC</span>
+          <span class="tag">TypeScript</span><span class="tag">MongoDB</span><span class="tag">PWA</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/sujeet-kumar" target="_blank" class="proj-link">⌥ GitHub Code</a>
+          <a href="#" class="proj-link primary">↗ Live Demo</a>
+        </div>
+      </div>
+      <div class="proj-card fade-up" data-cat="ecommerce">
+        <div class="proj-icon">🛍</div>
+        <div class="proj-name">TrendNest — Shopify E-Commerce Store</div>
+        <div class="proj-desc">Custom Liquid template architecture with dynamic storefront styling and multi-currency payment checkout integrations. Live at trendnest.in.</div>
+        <div class="proj-tags">
+          <span class="tag">Shopify</span><span class="tag">Liquid</span><span class="tag">CSS</span>
+          <span class="tag">Payment APIs</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/sujeet-kumar" target="_blank" class="proj-link">⌥ GitHub Code</a>
+          <a href="https://trendnest.in" target="_blank" class="proj-link primary">↗ Live Store</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">04. Skills</div>
+      <h2 class="section-title">Technical <span class="grad-text">Skills</span></h2>
+      <p class="section-sub">My toolkit — languages, frameworks, databases, and CS fundamentals.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-cat-icon">💻</div>
+        <div class="skill-cat-name">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-badge">C</span><span class="skill-badge">C++</span>
+          <span class="skill-badge">Python</span><span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">TypeScript</span><span class="skill-badge">Java</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-cat-icon">🌐</div>
+        <div class="skill-cat-name">Web & Backend</div>
+        <div class="skill-tags">
+          <span class="skill-badge">Next.js</span><span class="skill-badge">React</span>
+          <span class="skill-badge">Node.js</span><span class="skill-badge">Express</span>
+          <span class="skill-badge">Flask</span><span class="skill-badge">Tailwind CSS</span>
+          <span class="skill-badge">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-cat-icon">🗄</div>
+        <div class="skill-cat-name">Databases & Tools</div>
+        <div class="skill-tags">
+          <span class="skill-badge">MySQL</span><span class="skill-badge">MongoDB</span>
+          <span class="skill-badge">PostgreSQL</span><span class="skill-badge">Git</span>
+          <span class="skill-badge">GitHub</span><span class="skill-badge">Postman</span>
+          <span class="skill-badge">Docker</span><span class="skill-badge">VS Code</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-cat-icon">🧠</div>
+        <div class="skill-cat-name">CS Fundamentals</div>
+        <div class="skill-tags">
+          <span class="skill-badge">DSA</span><span class="skill-badge">OOP</span>
+          <span class="skill-badge">DBMS</span><span class="skill-badge">OS</span>
+          <span class="skill-badge">CN</span><span class="skill-badge">SDLC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ACHIEVEMENTS ─── -->
+<section id="achievements">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">05. Achievements</div>
+      <h2 class="section-title">Certifications & <span class="grad-text">Achievements</span></h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card fade-up">
+        <div class="ach-icon">🏆</div>
+        <div>
+          <div class="ach-title">GATE 2025 CS & IT Qualified</div>
+          <div class="ach-desc">All India Rank (AIR) 6962 &nbsp;·&nbsp; Score 499<br>Among 1.7+ lakh candidates nationally</div>
+        </div>
+      </div>
+      <div class="ach-card fade-up">
+        <div class="ach-icon">☁</div>
+        <div>
+          <div class="ach-title">Salesforce Developer Virtual Internship</div>
+          <div class="ach-desc">8-week intensive program in Apex, SOQL, and Salesforce cloud architecture</div>
+        </div>
+      </div>
+      <div class="ach-card fade-up">
+        <div class="ach-icon">🌩</div>
+        <div>
+          <div class="ach-title">Google Cloud Study Jam 2023</div>
+          <div class="ach-desc">Cloud Computing Foundations and Generative AI modules — Google Developer program</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:24px;">
+      <div class="section-label" style="margin-bottom:16px;">🤝 Leadership & Community</div>
+    </div>
+    <div class="community-grid">
+      <div class="community-card fade-up">
+        <div class="community-icon">📢</div>
+        <div>
+          <div class="community-role">Public Relations Volunteer — GDSC (2023–24)</div>
+          <div class="community-desc">Coordinated 5+ coding workshops, achieving a 50%+ boost in participant engagement and community reach.</div>
+        </div>
+      </div>
+      <div class="community-card fade-up">
+        <div class="community-icon">🎪</div>
+        <div>
+          <div class="community-role">Volunteer — DevFest Patna 2025 (GDG Patna)</div>
+          <div class="community-desc">Event management and technical community support for one of Bihar's largest developer festivals.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">06. Contact</div>
+      <h2 class="section-title">Get In <span class="grad-text">Touch</span></h2>
+      <p class="section-sub">Open to opportunities, collaborations, and interesting conversations. Say hello!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="fade-up">
+        <p style="color:var(--muted);font-size:1rem;line-height:1.75;margin-bottom:8px;">Whether you have a project in mind, a job opportunity, or just want to connect — my inbox is always open. I'll get back to you promptly.</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-val">+91-6205881294</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-val">ksujeet7091@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-val">IIT Ropar, Punjab, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-input" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:13px;">
+            ✉ Send Message
+          </button>
+          <div id="formMsg" style="display:none;text-align:center;font-size:13px;color:var(--accent1);margin-top:8px;">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="container">
+    <p>Designed &amp; Built by <span>Sujeet Kumar</span> &copy; 2026. All rights reserved.</p>
+    <div style="margin-top:12px;display:flex;justify-content:center;gap:16px;">
+      <a href="https://github.com/sujeet-kumar" target="_blank" style="color:var(--muted);text-decoration:none;font-size:12px;">GitHub</a>
+      <a href="https://linkedin.com/in/sujeet-kumar" target="_blank" style="color:var(--muted);text-decoration:none;font-size:12px;">LinkedIn</a>
+      <a href="mailto:ksujeet7091@gmail.com" style="color:var(--muted);text-decoration:none;font-size:12px;">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
